@@ -76,8 +76,151 @@ list($shortLang) = explode("-", $currentLang);
 		<input type="hidden" name="view" value="itemlist" />
 		<input type="hidden" name="task" value="filter" />
 		<?php endif; ?>
-		
-	  <div class="k2filter-table">
+
+		<!---Formulario-->
+			<div class="k2filter-table">
+				<div class="k2filter-cell k2filter-cell0">
+					<div class="k2filter-field-select">
+						<h3>Tipo de Viaje</h3>
+						<select name="typeDest" id="typeDest" style="width:250px">
+							<option value="" class="empty">-- Seleccionar --</option>
+							<option value="Ida">Ida</option>
+							<option value="Ida y Vuelta">Ida y Vuelta</option>		
+						</select>
+					</div>
+				</div>
+
+				<div class="k2filter-cell k2filter-cell1">
+					<div class="k2filter-field-text" id="sizing-addon2">
+						<h3>Origen</h3>		
+						<input class="inputbox" name="ssource" id="source" type="text" value="" style="width:250px">
+					</div>
+				</div>
+
+				<div class="k2filter-cell k2filter-cell1">
+					<div class="k2filter-field-text" id="sizing-addon3">
+						<h3>Destino</h3>
+						<input class="inputbox" name="dest" id="dest" type="text" value="" style="width:250px">
+					</div>
+				</div>
+
+				<div class="k2filter-cell k2filter-cell2">
+					<div class="k2filter-field-text" id='datetimepickerdest1'>
+						<h3>Fecha de Salida</h3>
+						<input class="inputbox" name="dateDest1" id="dateDest1" type="date" value="" style="width:250px">
+					</div>
+				</div>
+
+				<div class="k2filter-cell  k2filter-cell2" id='datetimepickerdestDiv'>	
+					<div class="k2filter-field-text" id='datetimepickerdest2'>
+						<h3>Fecha de Regreso</h3>
+						<input class="inputbox" name="dateDest2" id="dateDest2" type="date" value="" style="width:250px">
+					</div>
+				</div>
+				<div class="k2filter-cell k2filter-cell3">
+					<div class="k2filter-field-select">
+						<h3>Tipo de Boleto</h3>
+						<select name="tipo" style="width:250px" id="cabin" name="cabin">
+							<option value="" class="empty">-- Seleccionar --</option>
+							<option value="Economy">Economy</option>
+							<option value="Firts">First</option>		
+							<option value="Business">Business</option>	
+						</select>
+					</div>
+				</div>
+				
+			<div class="k2filter-cell k2filter-cell1">
+	
+				<div class="k2filter-field-text" id="sizing-addon3">
+					<h3>Aerolínea</h3>		
+					<input class="inputbox" name="carrier" id="carrier" type="text" value="" style="width:250px">
+				</div>
+			</div>
+
+			<div class="k2filter-cell k2filter-cell4">
+				<div class="k2filter-field-select" id="sizing-addon3">
+					<h3>Vuelos directos</h3>
+					<select  name="direct" id="direct" style="width:250px">
+						<option value="No">No</option>
+					</select>
+				</div>
+			</div>
+
+			
+			<div class="k2filter-cell k2filter-cell4">
+				<div class="k2filter-field-select">
+					<h3>Adultos (+12 Años)</h3>
+					<select style="width:90px" name="adulto" id="adulto">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="k2filter-cell k2filter-cell4">
+				<div class="k2filter-field-select" >
+					<h3>3ra Edad (+60 Años)</h3>
+					<select style="width:90px" name="mayor" id="mayor">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="k2filter-cell k2filter-cell4">
+				<div class="k2filter-field-select">
+					<h3>Niños (2-11 Años)</h3>
+					<select  style="width:90px" name="nino" id="nino">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="k2filter-cell k2filter-cell4">
+				<div class="k2filter-field-select">
+					<h3>Bebé(0-23 Meses)</h3>
+					<select  style="width:90px" name="bebe" id="bebe">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</div>
+			</div>	
+		</div>
+	<!--Formulario-->
+	
+	<!-- <div class="k2filter-table">
 
 <?php for($k = 0; $k < count($field_types); $k++) { 
 		$field = $field_types[$k];
@@ -363,7 +506,7 @@ list($shortLang) = explode("-", $currentLang);
 		}
 	}
 ?>		<div style="clear: both;"></div>
-	</div><!--/k2filter-table-->
+	</div>--><!--/k2filter-table-->
 	
 	<?php if($restrict == 1) : ?>
 		<?php if($restmode == 1) : ?>			
@@ -402,7 +545,7 @@ list($shortLang) = explode("-", $currentLang);
 	<input type="hidden" name="Itemid" value="<?php echo $itemid; ?>" />
 	
 	<?php if ($button):?>
-	<input type="submit" value="<?php echo $button_text; ?>" class="button master_simple_button <?php echo $moduleclass_sfx; ?>" />
+<center>	<input type="submit" value="<?php echo $button_text; ?>" class="button master_simple_button <?php echo $moduleclass_sfx; ?>" />
 	<?php endif; ?>
 	
 	<?php if ($clear_btn):?>

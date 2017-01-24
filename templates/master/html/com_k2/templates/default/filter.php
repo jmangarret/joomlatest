@@ -9,16 +9,17 @@
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
+
 echo "<pre>";
 //Se puede acceder a cada parametro
-echo "Location: ".	$_REQUEST["searchword3"];
+/*echo "Tipo: ".	$_REQUEST["tipo"];
 echo "<br>";
 echo "Hotel Type: ".	$_REQUEST["searchword5"];
 echo "<br>";
 echo "Minimum stay: ".	$_REQUEST["searchword7"];
 echo "<br>";
 echo "Room Type: ".	$_REQUEST["searchword54"];
-echo "<br><br><br>";
+echo "<br><br><br>";*/
 //Muesta todo el array
 print_r($_REQUEST);
 die();

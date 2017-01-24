@@ -710,8 +710,8 @@ h3.comment_title
 }
 .home_search .k2filter-cell 
 {
-    padding: 0 10px 20px 0;
-	width:49%;
+  padding: 0 5px 10px 0;
+	width:25%;
 }
 .button.master_simple_button.home_search {
     border-radius: 4px;
@@ -748,7 +748,7 @@ h3.comment_title
 /**** search home icon ****/
 
 #hotel .k2filter-cell0::after, #flight .k2filter-cell0::after, #tours .k2filter-cell0::after, #hotel .k2filter-cell1 ::after,
-#hotel .k2filter-cell2 ::after, #hotel .k2filter-cell3 ::after, #flight .k2filter-cell1 ::after, #flight .k2filter-cell2 ::after,
+#hotel .k2filter-cell2 ::after, #hotel .k2filter-cell3 ::after, #flight .k2filter-cell1 ::after, #flight .k2filter-cell2 ::after, #flight .k2filter-cell3 ::after,#flight .k2filter-cell4 ::after,
 #tours .k2filter-cell1 ::after, #tours .k2filter-cell2 ::after {
     cursor: default;
     font-family: FontAwesome;
@@ -761,7 +761,7 @@ h3.comment_title
 }
 #hotel .k2filter-cell0::after, #flight .k2filter-cell0::after, #tours .k2filter-cell0::after 
 {
-	 content: "\f041";
+	 content: "\f0ec";
 }
 #hotel .k2filter-cell1 ::after
 {
@@ -781,7 +781,15 @@ h3.comment_title
 }
 #flight .k2filter-cell2 ::after
 {
-    content: "\f1d9";
+    content: "\f073";
+}
+#flight .k2filter-cell3 ::after
+{
+    content: "\f145";
+}
+#flight .k2filter-cell4 ::after
+{
+    content: "\f0a9";
 }
 #tours .k2filter-cell1 ::after
 {
