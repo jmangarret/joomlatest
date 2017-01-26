@@ -4,9 +4,16 @@
 // K2 Multiple Extra fields Filter and Search module by Andrey M
 // molotow11@gmail.com
 */
+ini_set('display_errors', '1');
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
+
+
+
 
 $language = JFactory::getLanguage();
 $currentLang = $language->getTag();
@@ -79,7 +86,9 @@ list($shortLang) = explode("-", $currentLang);
 
 		<!---Formulario-->
 			<div class="k2filter-table">
-				<div class="k2filter-cell k2filter-cell0">
+				<?php include('yoheni/GDS_DESARROLLO/View/Avail/index.php'); ?>
+
+				<!--<div class="k2filter-cell k2filter-cell0">
 					<div class="k2filter-field-select">
 						<h3>Tipo de Viaje</h3>
 						<select name="typeDest" id="typeDest" style="width:250px">
@@ -216,7 +225,7 @@ list($shortLang) = explode("-", $currentLang);
 						<option value="9">9</option>
 					</select>
 				</div>
-			</div>	
+			</div>-->
 		</div>
 	<!--Formulario-->
 	
@@ -545,7 +554,7 @@ list($shortLang) = explode("-", $currentLang);
 	<input type="hidden" name="Itemid" value="<?php echo $itemid; ?>" />
 	
 	<?php if ($button):?>
-<center>	<input type="submit" value="<?php echo $button_text; ?>" class="button master_simple_button <?php echo $moduleclass_sfx; ?>" />
+<!--<input type="submit" value="<?php echo $button_text; ?>" class="button master_simple_button <?php echo $moduleclass_sfx; ?>" />-->
 	<?php endif; ?>
 	
 	<?php if ($clear_btn):?>
