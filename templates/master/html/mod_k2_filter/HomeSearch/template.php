@@ -7,8 +7,6 @@
 ini_set('display_errors', '1');
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
-
-
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
@@ -86,7 +84,7 @@ list($shortLang) = explode("-", $currentLang);
 
 		<!---Formulario-->
 			<div class="k2filter-table">
-				<?php include('yoheni/GDS_DESARROLLO/View/Avail/index.php'); ?>
+				<?php include('webservices/View/Avail/index.php'); ?>
 
 				<!--<div class="k2filter-cell k2filter-cell0">
 					<div class="k2filter-field-select">
