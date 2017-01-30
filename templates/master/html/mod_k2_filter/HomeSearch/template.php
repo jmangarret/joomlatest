@@ -84,7 +84,7 @@ list($shortLang) = explode("-", $currentLang);
 
 		<!---Formulario-->
 			<div class="k2filter-table">
-				<?php include('webservices/View/Avail/index.php'); ?>
+				<?php //include('webservices/View/Avail/index.php'); ?>
 
 				<!--<div class="k2filter-cell k2filter-cell0">
 					<div class="k2filter-field-select">

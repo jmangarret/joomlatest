@@ -164,11 +164,12 @@ if($chooselayout=='boxed')
 		</div>	
 	</div>
 	<?php } ?>
-	
+		<?php include('webservices/View/Avail/index.php'); ?>
 	<?php if ($this->countModules('mj-master-slide')) { ?>
 	<div class="slider-text">
 		<div class="container">
 		   <div class="row">
+
 				<jdoc:include type="modules" name="mj-master-slide" style="master" />
 			</div> 
 		</div>	
