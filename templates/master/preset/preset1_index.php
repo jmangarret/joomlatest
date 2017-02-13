@@ -164,6 +164,7 @@ if($chooselayout=='boxed')
 		</div>	
 	</div>
 	<?php } ?>
+	<br><br><br>
 		<?php include('webservices/View/Avail/index.php'); ?>
 	<?php if ($this->countModules('mj-master-slide')) { ?>
 	<div class="slider-text">

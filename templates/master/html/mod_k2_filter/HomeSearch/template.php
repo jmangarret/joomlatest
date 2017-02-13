@@ -227,7 +227,7 @@ list($shortLang) = explode("-", $currentLang);
 		</div>
 	<!--Formulario-->
 	
-	<!-- <div class="k2filter-table">
+	<div class="k2filter-table">
 
 <?php for($k = 0; $k < count($field_types); $k++) { 
 		$field = $field_types[$k];
@@ -513,7 +513,7 @@ list($shortLang) = explode("-", $currentLang);
 		}
 	}
 ?>		<div style="clear: both;"></div>
-	</div>--><!--/k2filter-table-->
+	</div><!--/k2filter-table-->
 	
 	<?php if($restrict == 1) : ?>
 		<?php if($restmode == 1) : ?>			
@@ -552,7 +552,7 @@ list($shortLang) = explode("-", $currentLang);
 	<input type="hidden" name="Itemid" value="<?php echo $itemid; ?>" />
 	
 	<?php if ($button):?>
-<!--<input type="submit" value="<?php echo $button_text; ?>" class="button master_simple_button <?php echo $moduleclass_sfx; ?>" />-->
+<input type="submit" value="<?php echo $button_text; ?>" class="button master_simple_button <?php echo $moduleclass_sfx; ?>" />
 	<?php endif; ?>
 	
 	<?php if ($clear_btn):?>
